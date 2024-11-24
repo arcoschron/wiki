@@ -1,101 +1,149 @@
-/* Общие настройки */
+/* Общие стили */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: "Arial", sans-serif;
     line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Шапка */
-.header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #202020;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.navbar a {
-    color: #fff;
-    margin-right: 15px;
+/* Стили для ссылок */
+a {
+    color: #0645AD;
     text-decoration: none;
 }
 
-.navbar a.active {
-    font-weight: bold;
+a:hover {
     text-decoration: underline;
 }
 
-/* Герой-блок */
-.hero {
-    background: #555 url('header_geography.jpg') no-repeat center center/cover;
+/* Шапка сайта */
+header {
+    background-color: #202020;
     color: #fff;
-    padding: 100px 20px;
     text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-.hero-content h1 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
+/* Навигация */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-/* Контент */
-.encyclopedia-section {
-    padding: 20px;
-    max-width: 1200px;
+nav a {
+    color: #fff;
+    font-size: 1em;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Основной контент */
+.content {
+    max-width: 960px;
     margin: 0 auto;
-    background: #fff;
-    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.encyclopedia-menu {
-    list-style: none;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.encyclopedia-menu li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.encyclopedia-menu a {
-    text-decoration: none;
-    color: #0074d9;
-    font-weight: bold;
-}
-
-.encyclopedia-menu a:hover {
-    text-decoration: underline;
-}
-
-/* Заголовки */
-h2, h3 {
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 10px;
+.content h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-hr {
+.content h3 {
+    font-size: 1.4em;
+    color: #444;
+    margin-top: 15px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
-    border: none;
-    border-top: 1px solid #ccc;
 }
 
-/* Подвал */
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Футер */
 footer {
-    text-align: center;
-    padding: 10px 20px;
-    background: #333;
+    background-color: #202020;
     color: #fff;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content h3 {
+        font-size: 1.2em;
+    }
 }
